@@ -1,6 +1,6 @@
 import os
 from tools.logger import MyLogger
-from translate_it import translate_it
+from tools.translate_it import translate_it
 
 if __name__ == '__main__':
     directories = 'data'
@@ -13,7 +13,7 @@ if __name__ == '__main__':
         with MyLogger(log_file):
             translate_it(
                 os.path.join(directories, file),
-                os.path.join(result_directories, result_name),
+                result_name,
                 from_lng,
                 name
             )
