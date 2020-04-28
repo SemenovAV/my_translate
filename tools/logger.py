@@ -1,9 +1,12 @@
 from datetime import datetime
 
-'''Замеряет скорость работы кода. Результат печатает в консоль и логирует в файл.'''
-
 
 class MyLogger:
+    """
+    Замеряет скорость работы кода. Результат печатает в консоль и логирует в файл.
+
+    """
+
     def __init__(self, log_file_path):
         self.path = log_file_path
 
